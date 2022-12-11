@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<h1>Aprenderemos: </h1>
+<h3>Funciones.</h3>
+<br>
+<script>
+    var anho=2022;//con 'var' creamos y asignamos una variable.
+    //el nombre las variables también son sensibles a mayúsculas y minúculas
+    document.write("var saltoLinea = \"\< b r \>\< b r \>\".<br>");
+    var saltoLinea = "<br>";
+    document.write("Otra solución: Crear una función. <br>");
+    document.write("function <'nombredelaFuncion'>() {<br>" );
+    document.write(saltoLinea);    
+    document.write("} <br>");
+    function saltarLinea(){
+        document.write('<br><br>');
+    }
+    document.write("Suzu tiene: " + (anho-2017)+ " años");
+    saltarLinea();
+    document.write("Begoña tiene: " + (anho-2018)+ " años");
+    saltarLinea();
+    anho=2030;
+    document.write("Luna tiene: " + (anho-2016)+ " años");
+    saltarLinea();
+    
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<h1>Calcula Índice de Masa Corporal</h1>
+<script>
+
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+    function imprimir(frase) {
+        document.write('<big>' + frase + '</big>');
+        saltarLinea();
+    }
+    //función paraimc
+    function imcCal(peso, altura, nombre) {
+        return peso / (altura * altura);
+    }
+    nombreUser = prompt("su nombre, por favor: ");
+    pesoUser = prompt(nombreUser + " su peso: ");
+    alturaUser = prompt(nombreUser + " su altura: ");
+
+    imprimir(`${nombreUser}, su imc de  es: ${imcCal(pesoUser, alturaUser, nombreUser)}`);
+
+
+
+</script>
